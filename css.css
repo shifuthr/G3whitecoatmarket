@@ -1,0 +1,274 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #2C3E50;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .nurse-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .nurse-logo .nurse-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+header .nurse-logo .nurse-icon {
+    font-size: 30px;
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header nav ul li:hover>a {
+    color: #f39c12;
+}
+
+header nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: #34495E;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+header nav ul li:hover .dropdown {
+    display: block;
+}
+
+header nav ul li .dropdown a {
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+}
+
+header .contact-number {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Search Bar */
+.search input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    display: block;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search input:focus {
+    border-color: #f39c12;
+}
+
+/* Categories */
+.categories {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.categories h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2C3E50;
+}
+
+.category {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    width: 150px;
+    text-align: center;
+}
+
+.category:hover {
+    background-color: #f39c12;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Product Items */
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.product-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.product-item .price {
+    font-size: 16px;
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.product-item .add-to-cart {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-item .add-to-cart:hover {
+    background-color: #e67e22;
+}
+
+/* Chat Box */
+.chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f39c12;
+    padding: 15px 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chat-box:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer .social-icons a:hover {
+    color: #f39c12;
+}
+
+/* Popup Ad */
+#popupAd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content h3 {
+    font-size: 24px;
+    color: #2C3E50;
+}
+
+.popup-content p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
